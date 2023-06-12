@@ -1,9 +1,2 @@
 #!/bin/bash
-# Get the list of files in the current directory, sorted by modification time in reverse order
-files=$(ls -lt --time-style="+%Y-%m-%d %H:%M:%S" | grep "^-" | awk '{print $6, $7, $8}' | head -n 10)
-
-# Loop through the files and display them one per line
-while IFS= read -r file; do
-    echo "$file"
-done <<< "$files"
-
+ls -t1 | head 
