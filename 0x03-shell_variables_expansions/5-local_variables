@@ -1,19 +1,2 @@
 #!/bin/bash
-# List local variables
-local_vars=$(set -o posix ; set)
-
-# List environment variables
-env_vars=$(env)
-
-# List functions
-functions=$(declare -F)
-
-# Print the results
-echo "Local Variables:"
-echo "$local_vars"
-echo
-echo "Environment Variables:"
-echo "$env_vars"
-echo
-echo "Functions:"
-echo "$functions"
+set 
